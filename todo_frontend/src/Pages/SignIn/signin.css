@@ -1,0 +1,107 @@
+@keyframes rotate {
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.parentsignin_container {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #4b0a7c 50%,
+    #2b86c5 100%
+  );
+
+  animation: rotate 1s infinite alternate linear;
+}
+
+.signin_container {
+  width: 400px;
+  padding: 100px 30px 64px;
+  border-radius: 1.25rem;
+  /* background: #ffffff; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 50%, #ffbbec 100%);
+
+  text-align: center;
+}
+.login-form {
+  display: grid;
+  width: 100%;
+  gap: 16px;
+  opacity: 0.8;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0;
+}
+#signin_h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+#login_btn {
+  border: 0;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background: #703eff;
+  color: #f9f9f9;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s;
+}
+#signup_btn {
+  border: 0;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background: #703eff;
+  color: #f9f9f9;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s;
+}
+.signin_control {
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background: #edeaf7;
+  color: #5a4f79;
+  font-family: inherit;
+  font-size: 16px;
+  transition: 0.4s;
+}
+.login-form input.signin_control::placeholder {
+  color: #aaa7bc;
+}
+.login-form {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
